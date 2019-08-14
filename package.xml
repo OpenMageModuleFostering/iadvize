@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>iAdvize</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license>Open Software License (OSL 3.0)</license>
     <channel>community</channel>
@@ -17,11 +17,13 @@ Cr&#xE9;ez un compte iadvize et t&#xE9;l&#xE9;chargez l'extension. Une fois inst
 Vous n'avez plus qu'&#xE0; vous connecter sur votre pupitre iAdvize pour communiquer avec vos clients.</description>
     <notes>La version stable est d&#xE9;sormais disponible.
 Pour toute question technique:
-contact@creadev.info ou www.creadev.info.</notes>
+contact@creadev.info ou www.creadev.info.
+
+NB: on a retir&#xE9; la d&#xE9;pendance du curl</notes>
     <authors><author><name>Creadev</name><user>auto-converted</user><email>remi@creadev.info</email></author></authors>
-    <date>2010-02-10</date>
-    <time>16:04:54</time>
-    <contents><target name="magecommunity"><dir name="Creadev"><dir name="Iadvize"><dir name="Block"><file name="Ga.php" hash="98376e7bb422ebc215a1b23a4dac47d3"/></dir><dir name="etc"><file name="config.xml" hash="45e62c91317c1b93abecfa7a4b5ca528"/></dir><dir name="Helper"><file name="Data.php" hash="b808c06ef222c57b24993afe2e979bf6"/></dir><dir name="Model"><file name="Observer.php" hash="226a93490faaa9c19b408b86e3bffd85"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="iadvize.xml" hash="e4515777fa6bda4771c9a45807702f89"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Creadev_Iadvize.xml" hash="5faf919cb90b3b24efea8c6cccf70d85"/></dir></target></contents>
+    <date>2010-02-15</date>
+    <time>14:13:09</time>
+    <contents><target name="magecommunity"><dir name="Creadev"><dir name="Iadvize"><dir name="Block"><file name="Ga.php" hash="554397c2e423d2fcff1cddf9a3c34062"/></dir><dir name="etc"><file name="config.xml" hash="45e62c91317c1b93abecfa7a4b5ca528"/></dir><dir name="Helper"><file name="Data.php" hash="b808c06ef222c57b24993afe2e979bf6"/></dir><dir name="Model"><file name="Observer.php" hash="226a93490faaa9c19b408b86e3bffd85"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="iadvize.xml" hash="e4515777fa6bda4771c9a45807702f89"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Creadev_Iadvize.xml" hash="5faf919cb90b3b24efea8c6cccf70d85"/></dir></target></contents>
     <compatible/>
     <dependencies/>
 </package>

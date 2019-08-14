@@ -47,6 +47,9 @@ class Creadev_Iadvize_Block_Ga extends Mage_Core_Block_Text
     protected function _toHtml()
     {
         $url = "http://www.iadvize.com/api/getcode.php?url=";
+		/*
+			Prendre en compte le https://
+		*/
 		$baseurl = str_replace("http://" , "", Mage::getBaseUrl());
 		$lastIndexOf = strrpos($baseurl, '/');
 		$length = strlen($baseurl);
@@ -66,19 +69,7 @@ class Creadev_Iadvize_Block_Ga extends Mage_Core_Block_Text
         ');
 		**/
 		
-		if (function_exists('curl_init')) {
-			$ch = curl_init($url);
-			curl_setopt($ch, CURLOPT_HEADER, 0);
-			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-			// User agent that mimics a browser
-			curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; WindowsNT 5.1; en-US; rv:1.7.5) Gecko/20041107 Firefox/1.0');
-			$result = curl_exec($ch);
-			curl_close($ch);
-		} else {
-		   // curl library is not compiled in so use file_get_contents
-		   $result = file_get_contents($url);
-		}
+		$result = file_get_contents($url);
 		$this->addText($result);
         
 
